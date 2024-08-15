@@ -26,10 +26,26 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <style>
+    /* Add your custom styles here */
+        .menu-toggle {
+            display: none; /* Initially hide the menu toggle */
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; /* Show the menu toggle on small screens */
+            }
+            .nav {
+                display: none; /* Hide the navigation menu by default on small screens */
+            }
+            .nav.show {
+                display: block; /* Show the navigation menu when toggle is clicked */
+            }
+        }
+    </style>
 </head>
 <body>
-      <header class="header">
+    <header class="header">
         <div class="container">
             <a href="#" class="logo" id="logo">
                 <img src="assets/img/logo.png" alt="LingoLand Logo">
@@ -42,7 +58,7 @@
                         <span class="menu-icon-line"></span>
                     </span>
                 </button>
-                <nav class="nav">
+                    <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="store.html">Store</a></li>
@@ -55,7 +71,6 @@
             </div>
         </div>
     </header>
-
 
     <main class="main-content">
         <section class="resources-section">
