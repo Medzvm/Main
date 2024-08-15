@@ -4,8 +4,7 @@
         "itemss",
         "quantitys"
     ],
-    "files.autoSave": "onWindowChange",
-    "editor.fontSize": 12,
-    "editor.accessibilityPageSize": 100,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 14,
     "editor.cursorSmoothCaretAnimation": "on"
 }
