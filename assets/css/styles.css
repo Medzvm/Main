@@ -21,8 +21,9 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
+    overflow-x: none; /* Prevent horizontal overflow */
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 img {
@@ -46,7 +47,6 @@ a {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    overflow-x: hidden;
 }
 
 /* Container within header */
@@ -112,7 +112,7 @@ a {
 
 /* Navigation Styling */
 .header .nav {
-    display: none;
+    display: none; /* Hide by default */
     flex-direction: column;
     width: 100%;
     background-color: #00ACA8;
@@ -173,7 +173,6 @@ a {
         z-index: 1;
         transform: translateX(100%);
         transition: transform 0.3s ease;
-        overflow-x: hidden;
 }
 
     .header .nav-list {
