@@ -32,32 +32,44 @@
 </head>
 <body>   
     <header class="header">
-      <div class="container">
-          <a href="#" class="logo" id="logo">
-              <img src="assets/img/Logo.png" alt="LingoLand Logo">
-          </a>
-          <div class="nav-container">
-              <button class="menu-toggle" aria-label="Toggle navigation">
-                  <span class="menu-icon">
-                      <span class="menu-icon-line"></span>
-                      <span class="menu-icon-line"></span>
-                      <span class="menu-icon-line"></span>
-                  </span>
-              </button>
-                  <nav class="nav">
-                  <ul class="nav-list">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="store.html">Store</a></li>
-                      <li><a href="aboout-us.html">About Us</a></li>
-                      <li><a href="our_ressources.html">Resources</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                  </ul>
-              </nav>
-  
-          </div>
-      </div>
+        <div class="container">
+            <a href="#" class="logo" id="logo">
+                <img src="assets/img/logo.png" alt="LingoLand Logo">
+            </a>
+            <div class="nav-container">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="menu-icon">
+                        <span class="menu-icon-line"></span>
+                        <span class="menu-icon-line"></span>
+                        <span class="menu-icon-line"></span>
+                    </span>
+                </button>
+                                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="aboout-us.html">About Us</a></li>
+                        <li><a href="our_ressources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="cart-container">
+                <button class="cart-btn" aria-label="View Cart">
+                    <img src="assets/img/cart.png" alt="Cart Icon">
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="cart-dropdown">
+                    <h2>Your Cart</h2>
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                    <a onclick="checkout()" class="view-cart">Check Out</a>
+                </div>
+            </div>
+        </div>
     </header>
-      
     
     <!-- Modal for Product Details Form -->
     <div id="product-modal" class="modal">
