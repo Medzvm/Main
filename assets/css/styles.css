@@ -1947,7 +1947,7 @@ button:active {
     border-radius: 15px; /* Larger border-radius */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
     width: 100%;
-    max-width: 350px; /* Increased max-width */
+    max-width: 70%; /* Increased max-width */
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
