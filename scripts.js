@@ -2,11 +2,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
 
+    // Hide the navigation initially
+    nav.style.display = 'none';
+
     menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('show');
-        menuToggle.classList.toggle('show');
+        // Toggle the display property
+        if (nav.style.display === 'none') {
+            nav.style.display = 'block';
+        } else {
+            nav.style.display = 'none';
+        }
     });
 });
+
+
 
 document.getElementById('logo').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default anchor behavior
