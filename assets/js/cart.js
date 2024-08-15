@@ -81,8 +81,8 @@ function updateCart() {
         cartItem.classList.add('cart-item');
         cartItem.setAttribute('data-product-id', item.id);
         cartItem.innerHTML = `
-            <button class="remove-item-btn" aria-label="Remove item">&times;</button>
-            <div class="cart-item-details">
+            
+            <div class="cart-item-details"><button class="remove-item-btn" aria-label="Remove item">&times;</button>
                 <h3>${item.name}</h3>
                 <p class="price">${item.price}</p>
             </div>
@@ -132,7 +132,6 @@ function removeCartItem(productId) {
                 <div class="cart-items">
                     ${cart.map(item => `
                         <div class="cart-item" data-product-id="${item.id}">
-                            <button class="remove-item-btn" aria-label="Remove item">&times;</button>
                             <img src="${item.image}" alt="Product Image" class="cart-item-image">
                             <div class="cart-item-details">
                                 <h3>${item.name}</h3>

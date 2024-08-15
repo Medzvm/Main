@@ -2254,7 +2254,6 @@ button:active {
     border-radius: 8px; /* Rounded corners */
     overflow: hidden; /* Clip content that overflows the border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    width: 200px; /* Fixed width for each card */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
@@ -2308,7 +2307,6 @@ button:active {
 .cart-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
@@ -2318,12 +2316,12 @@ button:active {
 
 .remove-item-btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    background: none;
+    top: 2px;
+    left: 2px;
+    background: #ff00006e;
     border: none;
-    color: #ff0000;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -2335,7 +2333,7 @@ button:active {
 }
 
 .cart-item-details {
-    flex-grow: 1;
+    flex-grow: 3;
     text-align: center;
 }
 
