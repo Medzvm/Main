@@ -81,7 +81,6 @@ function updateCart() {
         cartItem.classList.add('cart-item');
         cartItem.setAttribute('data-product-id', item.id);
         cartItem.innerHTML = `
-            
             <div class="cart-item-details"><button class="remove-item-btn" aria-label="Remove item">&times;</button>
                 <h3>${item.name}</h3>
                 <p class="price">${item.price}</p>
@@ -132,6 +131,7 @@ function removeCartItem(productId) {
                 <div class="cart-items">
                     ${cart.map(item => `
                         <div class="cart-item" data-product-id="${item.id}">
+                            <button class="remove-item-btn" aria-label="Remove item" style="display:none">&times;</button>
                             <img src="${item.image}" alt="Product Image" class="cart-item-image">
                             <div class="cart-item-details">
                                 <h3>${item.name}</h3>
@@ -232,8 +232,11 @@ function removeCartItem(productId) {
         } else {
             console.error('Form not found');
         }
+        
+    // Re-attach remove functionality
+    attachRemoveListeners();
+    
     }
-
 
     // Expose checkout function globally
     window.checkout = checkout;
