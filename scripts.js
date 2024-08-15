@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Disable horizontal scrolling
+document.body.style.overflowX = 'hidden';
 
 document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {

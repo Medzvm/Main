@@ -21,9 +21,8 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    overflow-x: none; /* Prevent horizontal overflow */
-    overflow-x: hidden;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 img {
@@ -35,6 +34,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 
 /* Header Styles */
 /* General Header Styling */
@@ -59,8 +59,8 @@ a {
 
 /* Logo Styling */
 .header .logo img {
-    height: 50px;
-    width: auto;
+    width: 100px;
+    height: auto;
 }
 
 /* Menu Toggle Button */
@@ -111,7 +111,7 @@ a {
 
 /* Navigation Styling */
 .header .nav {
-    display: flex; /* Ensure the nav is displayed */
+    display: none; /* Hide by default */
     flex-direction: column;
     width: 100%;
     background-color: #00ACA8;
@@ -119,7 +119,7 @@ a {
     top: 70px;
     right: 0;
     z-index: 1;
-    transform: translateX(100vw); /* Fully off-screen */
+    transform: translateX(100%);
     transition: transform 0.3s ease;
 }
 
@@ -152,7 +152,7 @@ a {
 
 /* Show Navigation */
 .header .nav.show {
-    transform: translateX(0); /* Fully visible when open */
+    transform: translateX(0);
 }
 
 /* Responsive Design */
@@ -162,13 +162,18 @@ a {
     }
 
     .header .nav {
-        display: none; /* Initially hidden */
-    }
-
-    .header .nav.show {
-        display: flex; /* Display the nav as flex when toggled */
-        transform: translateX(0); /* Moves nav into view */
-    }
+        display: flex;
+        /*Displaythenavasflextoallowslidingeffect*/flex-direction: column;
+        width: 100%;
+        background-color: #00ACA8;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        overflow-x: hidden;
+}
 
     .header .nav-list {
         flex-direction: column;
@@ -275,7 +280,7 @@ a {
 .hero-content {
     max-width: 500px;
     animation: slideInLeft 1s ease-in-out; /* Slide-in animation from the left */
-    margin-top: -100px; /* Move content up by additional 10px */
+    margin-top: -30px; /* Move content up by additional 10px */
 }
 
 .hero-content h1 {
