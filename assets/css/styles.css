@@ -275,7 +275,7 @@ a {
 .hero-content {
     max-width: 500px;
     animation: slideInLeft 1s ease-in-out; /* Slide-in animation from the left */
-    margin-top: -30px; /* Move content up by additional 10px */
+    margin-top: -100px; /* Move content up by additional 10px */
 }
 
 .hero-content h1 {
