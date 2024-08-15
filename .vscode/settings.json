@@ -3,5 +3,9 @@
         "btns",
         "itemss",
         "quantitys"
-    ]
+    ],
+    "files.autoSave": "onWindowChange",
+    "editor.fontSize": 12,
+    "editor.accessibilityPageSize": 100,
+    "editor.cursorSmoothCaretAnimation": "on"
 }
